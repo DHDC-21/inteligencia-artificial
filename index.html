@@ -7,39 +7,27 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="public/css/bootstrap.min.css">
   <script src="public/js/bootstrap.bundle.min.js"></script>
-  <!-- opencv -->
+  <!-- frameworks -->
   <script async src="public/js/opencv.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/face-api.js/1.8.0/face-api.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/yolo.js/1.2.0/yolo.min.js"></script>
+  <script defer src="./public/js/face-api.min.js"></script>
   <!-- css e js do projeto -->
-  <script src="public/js/script.js"></script>
+  <script defer src="public/js/script.js"></script>
   <link rel="stylesheet" href="public/css/style.css">
 </head>
 
 <body>
+  <br>
   <div class="container">
-    <h1> Reconhecimento de objetos: </h1>
+    <h1> Reconhecimento facial em fotos: </h1>
 
     <div class="row">
       <label for="inputFile">Input:</label>
-      <input type="file" name="inputFile" id="inputFile" onchange="loadImage">
-      <div class="col-md-6">
-        <img id="inputImage" width="480px" height="320px" >
-      </div>
+      <input type="file" id="file">
+      <label for="inputFile">Output:</label>
+      <img id="imagem" width="500" height="500">
     </div>
-    
-    <br>
-    
-    <div class="row">
-      <label for="outputCanvas">Output:</label>
-      <div class="col-md-6">
-        <canvas id="outputCanvas" width="480px" height="320px"></canvas>
-      </div>
-    </div>
-
+  
   </div>
-
-  <br>
 
 </body>
 
